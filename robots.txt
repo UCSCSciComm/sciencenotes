@@ -1,0 +1,7 @@
+Sitemap: https://outfog.com/sitemap.xml
+Sitemap: https://outfog.com/news-sitemap.xml
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://outfog.com/sitemap.xml

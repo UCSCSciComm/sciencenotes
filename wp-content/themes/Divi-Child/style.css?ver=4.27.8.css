@@ -1,0 +1,301 @@
+/*
+ Theme Name:     Divi Child Theme
+ Theme URI:      https://www.elegantthemes.com/gallery/foxy/
+ Description:    Divi Child Theme
+ Author:         Elegant Themes
+ Author URI:     https://www.elegantthemes.com
+ Template:       Divi
+ Version:        3.0.0
+*/
+ 
+@import url("../Divi/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/* custom css for embed  at feature/cleaner-farms-bacteria/  */
+.tableauPlaceholder {margin-top:-350px; }
+
+
+/*  to center the images and style CAPTIONS in the textbox  --*/
+
+div.wp-caption.aligncenter {width:99%; margin: 10px auto;}
+.wp-caption {border: none; background-color: #FFFFFF; text-align: center; line-height: 24px; font-style: italic;  margin:10px 0 30px;}
+p.wp-caption-text {font-size: 16px !important; padding-left:20px; padding-right:20px;}
+
+
+
+/* FOR CUSTOM TINY MCE DROPDOWNS  -->  also need to add to functions  <--  */
+
+.caption-text {
+	font-size: 16px;
+	line-height: 26px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	font-style: italic;
+	text-align: center;
+	padding:0 20px;
+}
+
+span.grey-text {
+	color: #505050;
+}	
+
+.raleway {
+	font-family: raleway;
+	line-height: 130%;
+	font-style: normal;
+}
+
+
+/* -- more space above the headers in features & blog posts --*/
+h2 {margin-top: 20px;}
+
+
+/* Style Shortcode Box USED FOR PODCASTS */
+.et-box.et-shadow {margin: 20px 0px 40px 0px; border: 1px solid #ddd; font-size: 20px; background-color:#D3D1D1 !important; padding: 1px; }
+.et-shadow .et-box-content { color:#1D1D1D; background:#ECECEC; padding: 15px 25px; min-height: 35px; font-family: raleway;}
+
+
+/* Remove Sidebar Line */
+@media (min-width: 981px) {#main-content .container:before { background: none; } }
+.et_pb_widget_area {border: none !important;}
+
+/* remove the padding and color/border around image */
+
+
+
+/* fix author box for features */
+	
+.et_pb_team_member_description {font-size: 13px !important; line-height: 21px; font-style:italic; color:#5C5C5C;}	
+.et_pb_team_member_image img {border: 1px solid #D8D8D8; border-radius: 50% !important; margin: 0 10px 10px 0;  width:70%; height:70%;  }
+
+
+/* post indent the paragraph so we can have images extend past text edges 
+
+.et_pb_text_inner { padding: 0 100px !important; color:red;}
+img .imageExtend {overflow-x: scroll !important; padding:0 !important;}
+
+
+/* -- transparent menu and header image to top, from elegant tweeks website. Add the class .top-section to the top section of every page in the Section Module Setting --*/
+#main-header-home { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0.1+100 */
+
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.05) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#1a000000',GradientType=0 ); /* IE6-9 */ box-shadow: none;}
+
+
+/*Pull quote text styling*/
+
+blockquote {
+font-family:"georgia";
+font-size: 28px;
+line-height: 36px;
+font-style: italic;
+color: #515151;
+font-weight: 300;
+position: relative;
+float:right;
+padding: 8px 10px 10px 25px;
+max-width: 330px;
+margin: 10px -10% 20px 30px;
+}
+
+ 
+
+
+ /* -- THIS MAKES QUOTATION MARK TOP LEFT --
+blockquote:before {
+    content: "\201C";
+    font-size: 75px;
+    position: absolute;
+    top: 10px;
+    left: -16px;
+    font-family: "georgia";
+    color: #515151;
+}
+
+*/
+
+
+
+#main-header.et-fixed-header {background-color: #000000 !important;}
+/*#main-header #logo {display: none;}*/
+#main-header.et-fixed-header #logo {display: inline;}
+.top-section {top: -80px; margin-bottom: -80px;}
+
+/* style meta and excpert for home pages */
+
+/*.et_pb_blog_grid_wrapper p {font-family: "raleway"; font-size: 1em; line-height: 150%;}*/
+
+.post-meta {font-family: "playfair-display", "serif" !important; text-align: left; line-height: 120%;}
+.post-meta /*.author.vcard*/ a {font-variant-caps: all-small-caps;  text-align: left; letter-spacing: 3px; /*margin-left:6px;*/}
+.post-meta .published {font-family: "raleway";}
+
+.post-meta-category a {display: block; margin-bottom: -20px; font-variant-caps: all-small-caps; letter-spacing: 3px;}
+
+.et_pb_blog_grid_wrapper {margin:-10px 0 0 0;}
+.et_pb_column {margin-right:0px;}
+
+/*.et_pb_post p.post-meta {margin-bottom:-5px;}*/
+
+
+/*trying to fix border around blog post home page   BLOG= .et_pb_4divi_cbg_1 .et_pb_post   FEATURES= .et_pb_4divi_cbg_0 .et_pb_post */
+
+.et_pb_post {font-family: "raleway" !important; font-size: .8em; line-height: 180%;}
+
+
+/* for Author Info Box plugin */
+
+.author_bio_section{
+background: none repeat scroll 0 0 #F5F5F5;
+padding: 15px;
+border: 1px solid #ccc;
+}
+
+.author_name{
+font-size:18px;
+font-weight: bold;
+}
+
+.author_details img {
+border: 1px solid #D8D8D8;
+border-radius: 50%; 
+float: left;
+margin: 0 10px 10px 0;
+}
+
+
+
+
+
+/*  DIVI POST HEADER DESIGN FROM DIVI BLOG HOW TO  - there is javascript in the head section added via Divi Theme Options Section  */
+
+h1.entry-title {text-align:center;
+font-size: 40px;
+font-weight: 600;
+letter-spacing: 1px;
+color: #20292f;
+padding-top: 20px;
+}
+ 
+/*.single-post #main-content {
+background: #f7f9fb;
+}*/
+ 
+.post-meta {
+text-align:left;
+margin: 8px 0 0px 0;
+ 
+}
+ 
+p.post-meta, .post-meta a {
+color: #71818c !important;
+font-size: 16px !important;
+}
+ 
+/*.single .et_pb_post {
+margin-bottom: 27px;
+box-shadow: 0px 20px 150px #d6dee4;
+}*/
+ 
+.et_pb_post .entry-content {
+padding: 20px;
+line-height: 26px;
+}
+ 
+.et_pb_post .entry-content p:first-of-type {
+padding-top: 0px;
+}
+.et_pb_post .entry-content p {
+padding-bottom: 40px;
+}
+ 
+.with-border {
+border-radius: 4px;
+}
+ 
+ol.commentlist > li.comment, #respond{
+background-color: #fff !important;
+padding: 20px !important;
+margin-bottom: 40px;
+}
+ 
+h1#comments {
+margin-bottom: 40px;
+}
+ 
+h3#reply-title {
+    font-size: 35px;
+    letter-spacing: 0px;
+}
+
+
+
+
+/*.comment_area .comment-reply-link, .form-submit .et_pb_button {
+font-size: 14px;
+color: #71818c;
+font-weight: 600;
+text-transform: uppercase;
+margin-top: 10px;
+display: inline-block;
+padding: 8px 16px;
+border-radius: 60px;
+background-color: #f7f9fb;
+border: 2px solid #e9eff5;
+position: inherit;
+float: right;
+}
+ 
+.form-submit .et_pb_button:hover {
+padding: 8px 16px;
+}
+ 
+.comment-reply-link.et_pb_button:hover:after {
+opacity: 0;
+}
+ 
+#commentform textarea {
+background-color: #f7f9fb;
+border: 2px solid #eff1f3;
+font-size: 18px;
+padding: 20px;
+color: #20292f;
+}
+ 
+.comment-body {
+padding: 0 0 0 100px;
+} */
+ 
+@media only screen and (max-width: 768px) {
+h1.entry-title {
+    font-size: 48px;
+}
+	
+/* end of the DIVI POST HEADER TWEEKS  */
+	
+
+
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
