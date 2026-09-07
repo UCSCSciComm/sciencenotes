@@ -1,7 +1,29 @@
-Sitemap: https://outfog.com/sitemap.xml
-Sitemap: https://outfog.com/news-sitemap.xml
-User-agent: *
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
+User-agent: GPTBot
+Disallow: /
 
-Sitemap: https://outfog.com/sitemap.xml
+User-agent: CCBot
+Disallow: /
+
+User-agent: SentiBot
+Disallow: /
+
+User-agent: sentibot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
